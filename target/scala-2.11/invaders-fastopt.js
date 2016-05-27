@@ -3618,6 +3618,20 @@ $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity.prototype.addB
   this.entity$1.addComponent__I__Lcom_darkoverlordofdata_entitas_IComponent__Lcom_darkoverlordofdata_entitas_Entity($m_Lcom_darkoverlordofdata_invaderz_Component$().Bounds$2.i$2, component);
   return this.entity$1
 });
+$c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity.prototype.addView__Lco_technius_scalajs_pixi_Sprite__Lcom_darkoverlordofdata_entitas_Entity = (function(sprite) {
+  var this$1 = $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$().com$darkoverlordofdata$invaderz$EntityExtensions$$viewComponentPool$1;
+  var this$2 = this$1.scala$collection$mutable$ListBuffer$$start$6;
+  if ($s_sc_TraversableOnce$class__nonEmpty__sc_TraversableOnce__Z(this$2)) {
+    var this$3 = $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$().com$darkoverlordofdata$invaderz$EntityExtensions$$viewComponentPool$1;
+    var this$4 = this$3.scala$collection$mutable$ListBuffer$$start$6;
+    $as_Lcom_darkoverlordofdata_invaderz_ViewComponent($s_sc_LinearSeqOptimized$class__last__sc_LinearSeqOptimized__O(this$4));
+    var component = new $c_Lcom_darkoverlordofdata_invaderz_ViewComponent().init___Lco_technius_scalajs_pixi_Sprite(sprite)
+  } else {
+    var component = new $c_Lcom_darkoverlordofdata_invaderz_ViewComponent().init___Lco_technius_scalajs_pixi_Sprite(sprite)
+  };
+  this.entity$1.addComponent__I__Lcom_darkoverlordofdata_entitas_IComponent__Lcom_darkoverlordofdata_entitas_Entity($m_Lcom_darkoverlordofdata_invaderz_Component$().View$2.i$2, component);
+  return this.entity$1
+});
 $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity.prototype.addPosition__F__F__Lcom_darkoverlordofdata_entitas_Entity = (function(x, y) {
   var this$1 = $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$().com$darkoverlordofdata$invaderz$EntityExtensions$$positionComponentPool$1;
   var this$2 = this$1.scala$collection$mutable$ListBuffer$$start$6;
@@ -3652,20 +3666,6 @@ $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity.prototype.boun
 });
 $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity.prototype.velocity__Lcom_darkoverlordofdata_invaderz_VelocityComponent = (function() {
   return $as_Lcom_darkoverlordofdata_invaderz_VelocityComponent(this.entity$1.getComponent__I__Lcom_darkoverlordofdata_entitas_IComponent($m_Lcom_darkoverlordofdata_invaderz_Component$().Velocity$2.i$2))
-});
-$c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity.prototype.addView__Lcom_scalawarrior_scalajs_createjs_Sprite__Lcom_darkoverlordofdata_entitas_Entity = (function(sprite) {
-  var this$1 = $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$().com$darkoverlordofdata$invaderz$EntityExtensions$$viewComponentPool$1;
-  var this$2 = this$1.scala$collection$mutable$ListBuffer$$start$6;
-  if ($s_sc_TraversableOnce$class__nonEmpty__sc_TraversableOnce__Z(this$2)) {
-    var this$3 = $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$().com$darkoverlordofdata$invaderz$EntityExtensions$$viewComponentPool$1;
-    var this$4 = this$3.scala$collection$mutable$ListBuffer$$start$6;
-    $as_Lcom_darkoverlordofdata_invaderz_ViewComponent($s_sc_LinearSeqOptimized$class__last__sc_LinearSeqOptimized__O(this$4));
-    var component = new $c_Lcom_darkoverlordofdata_invaderz_ViewComponent().init___Lcom_scalawarrior_scalajs_createjs_Sprite(sprite)
-  } else {
-    var component = new $c_Lcom_darkoverlordofdata_invaderz_ViewComponent().init___Lcom_scalawarrior_scalajs_createjs_Sprite(sprite)
-  };
-  this.entity$1.addComponent__I__Lcom_darkoverlordofdata_entitas_IComponent__Lcom_darkoverlordofdata_entitas_Entity($m_Lcom_darkoverlordofdata_invaderz_Component$().View$2.i$2, component);
-  return this.entity$1
 });
 $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity.prototype.addVelocity__F__F__Lcom_darkoverlordofdata_entitas_Entity = (function(x, y) {
   var this$1 = $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$().com$darkoverlordofdata$invaderz$EntityExtensions$$velocityComponentPool$1;
@@ -3773,46 +3773,6 @@ function $m_Lcom_darkoverlordofdata_invaderz_Match$() {
   return $n_Lcom_darkoverlordofdata_invaderz_Match$
 }
 /** @constructor */
-function $c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$() {
-  $c_O.call(this);
-  this.master$1 = null;
-  this.bitmap$0$1 = false
-}
-$c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$.prototype = new $h_O();
-$c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$.prototype.constructor = $c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$;
-/** @constructor */
-function $h_Lcom_darkoverlordofdata_invaderz_PoolExtensions$() {
-  /*<skip>*/
-}
-$h_Lcom_darkoverlordofdata_invaderz_PoolExtensions$.prototype = $c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$.prototype;
-$c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$.prototype.init___ = (function() {
-  return this
-});
-$c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$.prototype.master__Lcom_scalawarrior_scalajs_createjs_Sprite = (function() {
-  return ((!this.bitmap$0$1) ? this.master$lzycompute__p1__Lcom_scalawarrior_scalajs_createjs_Sprite() : this.master$1)
-});
-$c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$.prototype.master$lzycompute__p1__Lcom_scalawarrior_scalajs_createjs_Sprite = (function() {
-  if ((!this.bitmap$0$1)) {
-    this.master$1 = new $g.createjs.Sprite($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().sprites__Lcom_scalawarrior_scalajs_createjs_SpriteSheet(), "invader");
-    this.bitmap$0$1 = true
-  };
-  return this.master$1
-});
-var $d_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ = new $TypeData().initClass({
-  Lcom_darkoverlordofdata_invaderz_PoolExtensions$: 0
-}, false, "com.darkoverlordofdata.invaderz.PoolExtensions$", {
-  Lcom_darkoverlordofdata_invaderz_PoolExtensions$: 1,
-  O: 1
-});
-$c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$.prototype.$classData = $d_Lcom_darkoverlordofdata_invaderz_PoolExtensions$;
-var $n_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ = (void 0);
-function $m_Lcom_darkoverlordofdata_invaderz_PoolExtensions$() {
-  if ((!$n_Lcom_darkoverlordofdata_invaderz_PoolExtensions$)) {
-    $n_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ = new $c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$().init___()
-  };
-  return $n_Lcom_darkoverlordofdata_invaderz_PoolExtensions$
-}
-/** @constructor */
 function $c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ExtendPool() {
   $c_O.call(this);
   this.pool$1 = null
@@ -3825,10 +3785,8 @@ function $h_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ExtendPool() {
 }
 $h_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ExtendPool.prototype = $c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ExtendPool.prototype;
 $c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ExtendPool.prototype.createBullet__Lcom_darkoverlordofdata_invaderz_PositionComponent__Lcom_darkoverlordofdata_entitas_Entity = (function(position) {
-  var sprite = new $g.createjs.Sprite($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().sprites__Lcom_scalawarrior_scalajs_createjs_SpriteSheet(), "bullet");
-  var bounds = sprite.getBounds();
-  sprite.regX = ($uD(bounds.width) / 2);
-  sprite.regY = ($uD(bounds.height) / 2);
+  var sprite = new $g.PIXI.Sprite($g.PIXI.Texture.fromImage("images/bullet.png"));
+  sprite.anchor.set(0.5, 0.5);
   sprite.x = position.x$1;
   sprite.y = position.y$1;
   $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$();
@@ -3837,17 +3795,15 @@ $c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ExtendPool.prototype.createBu
   $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$();
   $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$();
   var entity = this.pool$1.createEntity__T__Lcom_darkoverlordofdata_entitas_Entity("bullet");
-  var entity$1 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity).addView__Lcom_scalawarrior_scalajs_createjs_Sprite__Lcom_darkoverlordofdata_entitas_Entity(sprite);
+  var entity$1 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity).addView__Lco_technius_scalajs_pixi_Sprite__Lcom_darkoverlordofdata_entitas_Entity(sprite);
   var entity$2 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$1).addPosition__F__F__Lcom_darkoverlordofdata_entitas_Entity($fround($uD(sprite.x)), $fround($uD(sprite.y)));
-  var entity$3 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$2).addBounds__F__F__Lcom_darkoverlordofdata_entitas_Entity($fround($uD(bounds.width)), $fround($uD(bounds.height)));
+  var entity$3 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$2).addBounds__F__F__Lcom_darkoverlordofdata_entitas_Entity($fround($uD(sprite.width)), $fround($uD(sprite.height)));
   var entity$4 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$3).addVelocity__F__F__Lcom_darkoverlordofdata_entitas_Entity(0.0, (-100.0));
   return new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$4).setBullet__Z__Lcom_darkoverlordofdata_entitas_Entity(true)
 });
 $c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ExtendPool.prototype.createPlayer__Lcom_darkoverlordofdata_entitas_Entity = (function() {
-  var sprite = new $g.createjs.Sprite($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().sprites__Lcom_scalawarrior_scalajs_createjs_SpriteSheet(), "ship");
-  var bounds = sprite.getBounds();
-  sprite.regX = ($uD(bounds.width) / 2);
-  sprite.regY = ($uD(bounds.height) / 2);
+  var sprite = new $g.PIXI.Sprite($g.PIXI.Texture.fromImage("images/ship.png"));
+  sprite.anchor.set(0.5, 0.5);
   sprite.y = $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().height__I();
   sprite.x = (($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().width__I() / 2) | 0);
   $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$();
@@ -3856,17 +3812,15 @@ $c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ExtendPool.prototype.createPl
   $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$();
   $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$();
   var entity = this.pool$1.createEntity__T__Lcom_darkoverlordofdata_entitas_Entity("player");
-  var entity$1 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity).addView__Lcom_scalawarrior_scalajs_createjs_Sprite__Lcom_darkoverlordofdata_entitas_Entity(sprite);
+  var entity$1 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity).addView__Lco_technius_scalajs_pixi_Sprite__Lcom_darkoverlordofdata_entitas_Entity(sprite);
   var entity$2 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$1).addPosition__F__F__Lcom_darkoverlordofdata_entitas_Entity($fround($uD(sprite.x)), $fround($uD(sprite.y)));
-  var entity$3 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$2).addBounds__F__F__Lcom_darkoverlordofdata_entitas_Entity($fround($uD(bounds.width)), $fround($uD(bounds.height)));
+  var entity$3 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$2).addBounds__F__F__Lcom_darkoverlordofdata_entitas_Entity($fround($uD(sprite.width)), $fround($uD(sprite.height)));
   var entity$4 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$3).addVelocity__F__F__Lcom_darkoverlordofdata_entitas_Entity(0.0, 0.0);
   return new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$4).setPlayer__Z__Lcom_darkoverlordofdata_entitas_Entity(true)
 });
 $c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ExtendPool.prototype.createAlien__F__F__F__Lcom_darkoverlordofdata_entitas_Entity = (function(x, y, speed) {
-  var sprite = $m_Lcom_darkoverlordofdata_invaderz_PoolExtensions$().master__Lcom_scalawarrior_scalajs_createjs_Sprite().clone();
-  var bounds = sprite.getBounds();
-  sprite.regX = ($uD(bounds.width) / 2);
-  sprite.regY = ($uD(bounds.height) / 2);
+  var sprite = new $g.PIXI.Sprite($g.PIXI.Texture.fromImage("images/invader.png"));
+  sprite.anchor.set(0.5, 0.5);
   sprite.x = x;
   sprite.y = y;
   $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$();
@@ -3875,9 +3829,9 @@ $c_Lcom_darkoverlordofdata_invaderz_PoolExtensions$ExtendPool.prototype.createAl
   $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$();
   $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$();
   var entity = this.pool$1.createEntity__T__Lcom_darkoverlordofdata_entitas_Entity("invader");
-  var entity$1 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity).addView__Lcom_scalawarrior_scalajs_createjs_Sprite__Lcom_darkoverlordofdata_entitas_Entity(sprite);
+  var entity$1 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity).addView__Lco_technius_scalajs_pixi_Sprite__Lcom_darkoverlordofdata_entitas_Entity(sprite);
   var entity$2 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$1).addPosition__F__F__Lcom_darkoverlordofdata_entitas_Entity($fround($uD(sprite.x)), $fround($uD(sprite.y)));
-  var entity$3 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$2).addBounds__F__F__Lcom_darkoverlordofdata_entitas_Entity($fround($uD(bounds.width)), $fround($uD(bounds.height)));
+  var entity$3 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$2).addBounds__F__F__Lcom_darkoverlordofdata_entitas_Entity($fround($uD(sprite.width)), $fround($uD(sprite.height)));
   var entity$4 = new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$3).addVelocity__F__F__Lcom_darkoverlordofdata_entitas_Entity(speed, 0.0);
   return new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity$4).setAlien__Z__Lcom_darkoverlordofdata_entitas_Entity(true)
 });
@@ -5137,58 +5091,6 @@ function $m_scm_HashTable$() {
   return $n_scm_HashTable$
 }
 /** @constructor */
-function $c_sjs_js_Dictionary$() {
-  $c_O.call(this)
-}
-$c_sjs_js_Dictionary$.prototype = new $h_O();
-$c_sjs_js_Dictionary$.prototype.constructor = $c_sjs_js_Dictionary$;
-/** @constructor */
-function $h_sjs_js_Dictionary$() {
-  /*<skip>*/
-}
-$h_sjs_js_Dictionary$.prototype = $c_sjs_js_Dictionary$.prototype;
-$c_sjs_js_Dictionary$.prototype.init___ = (function() {
-  return this
-});
-$c_sjs_js_Dictionary$.prototype.apply__sc_Seq__sjs_js_Dictionary = (function(properties) {
-  var result = this.empty__sjs_js_Dictionary();
-  properties.withFilter__F1__scg_FilterMonadic(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
-    return (function(check$ifrefutable$1$2) {
-      var check$ifrefutable$1 = $as_T2(check$ifrefutable$1$2);
-      return (check$ifrefutable$1 !== null)
-    })
-  })(this))).foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2, result$1) {
-    return (function(x$1$2) {
-      var x$1 = $as_T2(x$1$2);
-      if ((x$1 !== null)) {
-        var key = $as_T(x$1.$$und1__O());
-        var value = x$1.$$und2__O();
-        result$1[key] = value
-      } else {
-        throw new $c_s_MatchError().init___O(x$1)
-      }
-    })
-  })(this, result)));
-  return result
-});
-$c_sjs_js_Dictionary$.prototype.empty__sjs_js_Dictionary = (function() {
-  return {}
-});
-var $d_sjs_js_Dictionary$ = new $TypeData().initClass({
-  sjs_js_Dictionary$: 0
-}, false, "scala.scalajs.js.Dictionary$", {
-  sjs_js_Dictionary$: 1,
-  O: 1
-});
-$c_sjs_js_Dictionary$.prototype.$classData = $d_sjs_js_Dictionary$;
-var $n_sjs_js_Dictionary$ = (void 0);
-function $m_sjs_js_Dictionary$() {
-  if ((!$n_sjs_js_Dictionary$)) {
-    $n_sjs_js_Dictionary$ = new $c_sjs_js_Dictionary$().init___()
-  };
-  return $n_sjs_js_Dictionary$
-}
-/** @constructor */
 function $c_sjsr_Bits$() {
   $c_O.call(this);
   this.scala$scalajs$runtime$Bits$$$undareTypedArraysSupported$f = false;
@@ -6071,17 +5973,27 @@ $c_Lcom_darkoverlordofdata_entitas_PoolGroupChangedArgs.prototype.$classData = $
 function $c_Lcom_darkoverlordofdata_invaderz_Invaderz$() {
   $c_O.call(this);
   this.delta$1 = 0.0;
+  this.previousTime$1 = 0.0;
   this.shoot$1 = false;
   this.mouseX$1 = 0.0;
   this.mouseY$1 = 0.0;
   this.keys$1 = null;
-  this.stage$1 = null;
   this.width$1 = 0;
   this.height$1 = 0;
+  this.renderer$1 = null;
+  this.stage$1 = null;
   this.pool$1 = null;
   this.systems$1 = null;
-  this.sprites$1 = null;
-  this.resources$1 = null;
+  this.loaded$1 = null;
+  this.render$1 = null;
+  this.onMouseMove$1 = null;
+  this.onMouseUp$1 = null;
+  this.onMouseDown$1 = null;
+  this.onTouchEnd$1 = null;
+  this.onTouchMove$1 = null;
+  this.onTouchStart$1 = null;
+  this.onKeyUp$1 = null;
+  this.onKeyDown$1 = null;
   this.bitmap$0$1 = 0
 }
 $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype = new $h_O();
@@ -6091,105 +6003,265 @@ function $h_Lcom_darkoverlordofdata_invaderz_Invaderz$() {
   /*<skip>*/
 }
 $h_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype = $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype;
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.createCanvas__Lorg_scalajs_dom_raw_HTMLCanvasElement = (function() {
-  var canvas = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createElement("canvas");
-  var width = $uI($m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().innerWidth);
-  var height = $uI($m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().innerHeight);
-  canvas.setAttribute("width", ("" + width));
-  canvas.setAttribute("height", ("" + height));
-  $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().body.appendChild(canvas);
-  return canvas
-});
 $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.init___ = (function() {
   $n_Lcom_darkoverlordofdata_invaderz_Invaderz$ = this;
   this.delta$1 = 0.0;
+  this.previousTime$1 = 0.0;
   this.shoot$1 = false;
   this.mouseX$1 = 0.0;
   this.mouseY$1 = 0.0;
   this.keys$1 = new $c_scm_HashMap().init___();
   return this
 });
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.stage__Lcom_scalawarrior_scalajs_createjs_Stage = (function() {
-  return (((1 & this.bitmap$0$1) === 0) ? this.stage$lzycompute__p1__Lcom_scalawarrior_scalajs_createjs_Stage() : this.stage$1)
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.stage$lzycompute__p1__Lco_technius_scalajs_pixi_Container = (function() {
+  if (((8 & this.bitmap$0$1) === 0)) {
+    this.stage$1 = new $g.PIXI.Container();
+    this.bitmap$0$1 = (8 | this.bitmap$0$1)
+  };
+  return this.stage$1
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.loaded$lzycompute__p1__F2 = (function() {
+  if (((64 & this.bitmap$0$1) === 0)) {
+    this.loaded$1 = new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function(loader$2, res$2) {
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().systems__Lcom_darkoverlordofdata_entitas_Systems().add__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_Systems($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool().createSystem__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_ISystem(new $c_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem().init___Lcom_darkoverlordofdata_entitas_Pool($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool()))).add__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_Systems($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool().createSystem__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_ISystem(new $c_Lcom_darkoverlordofdata_invaderz_systems_PhysicsSystem().init___Lcom_darkoverlordofdata_entitas_Pool($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool()))).add__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_Systems($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool().createSystem__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_ISystem(new $c_Lcom_darkoverlordofdata_invaderz_systems_InputSystem().init___Lcom_darkoverlordofdata_entitas_Pool($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool()))).add__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_Systems($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool().createSystem__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_ISystem(new $c_Lcom_darkoverlordofdata_invaderz_systems_CreateAliensSystem().init___Lcom_darkoverlordofdata_entitas_Pool($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool()))).add__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_Systems($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool().createSystem__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_ISystem(new $c_Lcom_darkoverlordofdata_invaderz_systems_CollisionSystem().init___Lcom_darkoverlordofdata_entitas_Pool($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool()))).add__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_Systems($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool().createSystem__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_ISystem(new $c_Lcom_darkoverlordofdata_invaderz_systems_DestroySystem().init___Lcom_darkoverlordofdata_entitas_Pool($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool())));
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().systems__Lcom_darkoverlordofdata_entitas_Systems().initialize__V();
+      $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().addEventListener("touchstart", (function(f) {
+        return (function(arg1) {
+          return f.apply__O__O(arg1)
+        })
+      })($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().onTouchStart__F1()), true);
+      $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().addEventListener("touchmove", (function(f$1) {
+        return (function(arg1$1) {
+          return f$1.apply__O__O(arg1$1)
+        })
+      })($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().onTouchMove__F1()), true);
+      $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().addEventListener("touchend", (function(f$2) {
+        return (function(arg1$2) {
+          return f$2.apply__O__O(arg1$2)
+        })
+      })($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().onTouchEnd__F1()), true);
+      $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().addEventListener("mousedown", (function(f$3) {
+        return (function(arg1$3) {
+          return f$3.apply__O__O(arg1$3)
+        })
+      })($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().onMouseDown__F1()), true);
+      $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().addEventListener("mousemove", (function(f$4) {
+        return (function(arg1$4) {
+          return f$4.apply__O__O(arg1$4)
+        })
+      })($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().onMouseMove__F1()), true);
+      $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().addEventListener("mouseup", (function(f$5) {
+        return (function(arg1$5) {
+          return f$5.apply__O__O(arg1$5)
+        })
+      })($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().onMouseUp__F1()), true);
+      $m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().addEventListener("keydown", (function(f$6) {
+        return (function(arg1$6) {
+          return f$6.apply__O__O(arg1$6)
+        })
+      })($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().onKeyDown__F1()), false);
+      $m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().addEventListener("keyup", (function(f$7) {
+        return (function(arg1$7) {
+          return f$7.apply__O__O(arg1$7)
+        })
+      })($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().onKeyUp__F1()), false)
+    }));
+    this.bitmap$0$1 = (64 | this.bitmap$0$1)
+  };
+  return this.loaded$1
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onKeyDown$lzycompute__p1__F1 = (function() {
+  if (((32768 & this.bitmap$0$1) === 0)) {
+    this.onKeyDown$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(e$2) {
+      return $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().keys$1.put__O__O__s_Option($uI(e$2.keyCode), true)
+    }));
+    this.bitmap$0$1 = (32768 | this.bitmap$0$1)
+  };
+  return this.onKeyDown$1
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onMouseMove__F1 = (function() {
+  return (((256 & this.bitmap$0$1) === 0) ? this.onMouseMove$lzycompute__p1__F1() : this.onMouseMove$1)
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.render__F1 = (function() {
+  return (((128 & this.bitmap$0$1) === 0) ? this.render$lzycompute__p1__F1() : this.render$1)
 });
 $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.width__I = (function() {
-  return (((2 & this.bitmap$0$1) === 0) ? this.width$lzycompute__p1__I() : this.width$1)
+  return (((1 & this.bitmap$0$1) === 0) ? this.width$lzycompute__p1__I() : this.width$1)
 });
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.resources__Lcom_scalawarrior_scalajs_createjs_LoadQueue = (function() {
-  return (((64 & this.bitmap$0$1) === 0) ? this.resources$lzycompute__p1__Lcom_scalawarrior_scalajs_createjs_LoadQueue() : this.resources$1)
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onTouchStart$lzycompute__p1__F1 = (function() {
+  if (((8192 & this.bitmap$0$1) === 0)) {
+    this.onTouchStart$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(e$2) {
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().shoot$1 = true;
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().mouseX$1 = $fround($uD(e$2.touches.item(0).clientX));
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().mouseY$1 = $fround(($fround($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().height__I()) - $fround($uD(e$2.touches.item(0).clientY))))
+    }));
+    this.bitmap$0$1 = (8192 | this.bitmap$0$1)
+  };
+  return this.onTouchStart$1
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onMouseMove$lzycompute__p1__F1 = (function() {
+  if (((256 & this.bitmap$0$1) === 0)) {
+    this.onMouseMove$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(e$2) {
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().mouseX$1 = $fround($uD(e$2.clientX));
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().mouseY$1 = $fround(($fround($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().height__I()) - $fround($uD(e$2.clientY))))
+    }));
+    this.bitmap$0$1 = (256 | this.bitmap$0$1)
+  };
+  return this.onMouseMove$1
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.render$lzycompute__p1__F1 = (function() {
+  if (((128 & this.bitmap$0$1) === 0)) {
+    this.render$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(time$2) {
+      var time = $uD(time$2);
+      var prev = (($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().previousTime$1 === 0.0) ? time : $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().previousTime$1);
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().previousTime$1 = $fround(time);
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().delta$1 = $fround((0.001 * (time - prev)));
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().systems__Lcom_darkoverlordofdata_entitas_Systems().execute__V();
+      $m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().requestAnimationFrame((function(f) {
+        return (function(arg1) {
+          return f.apply__O__O(arg1)
+        })
+      })($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().render__F1()))
+    }));
+    this.bitmap$0$1 = (128 | this.bitmap$0$1)
+  };
+  return this.render$1
 });
 $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.height$lzycompute__p1__I = (function() {
-  if (((4 & this.bitmap$0$1) === 0)) {
-    this.height$1 = $uI(this.stage__Lcom_scalawarrior_scalajs_createjs_Stage().canvas.height);
-    this.bitmap$0$1 = (4 | this.bitmap$0$1)
+  if (((2 & this.bitmap$0$1) === 0)) {
+    this.height$1 = $uI($m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().innerHeight);
+    this.bitmap$0$1 = (2 | this.bitmap$0$1)
   };
   return this.height$1
 });
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onKeyDown__F1 = (function() {
+  return (((32768 & this.bitmap$0$1) === 0) ? this.onKeyDown$lzycompute__p1__F1() : this.onKeyDown$1)
+});
 $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.pool$lzycompute__p1__Lcom_darkoverlordofdata_entitas_Pool = (function() {
-  if (((8 & this.bitmap$0$1) === 0)) {
+  if (((16 & this.bitmap$0$1) === 0)) {
     this.pool$1 = new $c_Lcom_darkoverlordofdata_entitas_Pool().init___I__I($m_Lcom_darkoverlordofdata_invaderz_Component$().TotalComponents$2.i$2, 0);
-    this.bitmap$0$1 = (8 | this.bitmap$0$1)
+    this.bitmap$0$1 = (16 | this.bitmap$0$1)
   };
   return this.pool$1
 });
 $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.height__I = (function() {
-  return (((4 & this.bitmap$0$1) === 0) ? this.height$lzycompute__p1__I() : this.height$1)
+  return (((2 & this.bitmap$0$1) === 0) ? this.height$lzycompute__p1__I() : this.height$1)
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onMouseDown$lzycompute__p1__F1 = (function() {
+  if (((1024 & this.bitmap$0$1) === 0)) {
+    this.onMouseDown$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(e$2) {
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().shoot$1 = true
+    }));
+    this.bitmap$0$1 = (1024 | this.bitmap$0$1)
+  };
+  return this.onMouseDown$1
 });
 $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.main__V = (function() {
-  this.resources__Lcom_scalawarrior_scalajs_createjs_LoadQueue().loadManifest([$m_sjs_js_Dictionary$().apply__sc_Seq__sjs_js_Dictionary(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_T2().init___O__O("src", "images/invaderz.json"), new $c_T2().init___O__O("id", "resources"), new $c_T2().init___O__O("type", "spritesheet")]))]);
-  this.resources__Lcom_scalawarrior_scalajs_createjs_LoadQueue().addEventListener("complete", (function(f) {
-    return (function(arg1) {
-      return f.apply__O__O(arg1)
+  $g.PIXI.loader.add("black", "images/black.png").add("bullet", "images/bullet.png").add("invader", "images/invader.png").add("ship", "images/ship.png").load((function(f) {
+    return (function(arg1, arg2) {
+      return f.apply__O__O__O(arg1, arg2)
     })
-  })(new $c_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1().init___()));
-  this.resources__Lcom_scalawarrior_scalajs_createjs_LoadQueue().load()
+  })(this.loaded__F2()));
+  $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().body.appendChild(this.renderer__Lco_technius_scalajs_pixi_SystemRenderer().view);
+  $m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().requestAnimationFrame((function(f$1) {
+    return (function(arg1$1) {
+      return f$1.apply__O__O(arg1$1)
+    })
+  })(this.render__F1()))
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.renderer__Lco_technius_scalajs_pixi_SystemRenderer = (function() {
+  return (((4 & this.bitmap$0$1) === 0) ? this.renderer$lzycompute__p1__Lco_technius_scalajs_pixi_SystemRenderer() : this.renderer$1)
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onTouchMove$lzycompute__p1__F1 = (function() {
+  if (((4096 & this.bitmap$0$1) === 0)) {
+    this.onTouchMove$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(e$2) {
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().mouseX$1 = $fround($uD(e$2.touches.item(0).clientX));
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().mouseY$1 = $fround(($fround($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().height__I()) - $fround($uD(e$2.touches.item(0).clientY))))
+    }));
+    this.bitmap$0$1 = (4096 | this.bitmap$0$1)
+  };
+  return this.onTouchMove$1
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.renderer$lzycompute__p1__Lco_technius_scalajs_pixi_SystemRenderer = (function() {
+  if (((4 & this.bitmap$0$1) === 0)) {
+    this.renderer$1 = $g.PIXI.autoDetectRenderer(this.width__I(), this.height__I());
+    this.bitmap$0$1 = (4 | this.bitmap$0$1)
+  };
+  return this.renderer$1
 });
 $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.pool__Lcom_darkoverlordofdata_entitas_Pool = (function() {
-  return (((8 & this.bitmap$0$1) === 0) ? this.pool$lzycompute__p1__Lcom_darkoverlordofdata_entitas_Pool() : this.pool$1)
+  return (((16 & this.bitmap$0$1) === 0) ? this.pool$lzycompute__p1__Lcom_darkoverlordofdata_entitas_Pool() : this.pool$1)
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onTouchEnd__F1 = (function() {
+  return (((2048 & this.bitmap$0$1) === 0) ? this.onTouchEnd$lzycompute__p1__F1() : this.onTouchEnd$1)
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.loaded__F2 = (function() {
+  return (((64 & this.bitmap$0$1) === 0) ? this.loaded$lzycompute__p1__F2() : this.loaded$1)
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onTouchEnd$lzycompute__p1__F1 = (function() {
+  if (((2048 & this.bitmap$0$1) === 0)) {
+    this.onTouchEnd$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(e$2) {
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().shoot$1 = false
+    }));
+    this.bitmap$0$1 = (2048 | this.bitmap$0$1)
+  };
+  return this.onTouchEnd$1
 });
 $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.systems$lzycompute__p1__Lcom_darkoverlordofdata_entitas_Systems = (function() {
-  if (((16 & this.bitmap$0$1) === 0)) {
+  if (((32 & this.bitmap$0$1) === 0)) {
     this.systems$1 = new $c_Lcom_darkoverlordofdata_entitas_Systems().init___();
-    this.bitmap$0$1 = (16 | this.bitmap$0$1)
+    this.bitmap$0$1 = (32 | this.bitmap$0$1)
   };
   return this.systems$1
 });
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.sprites$lzycompute__p1__Lcom_scalawarrior_scalajs_createjs_SpriteSheet = (function() {
-  if (((32 & this.bitmap$0$1) === 0)) {
-    this.sprites$1 = this.resources__Lcom_scalawarrior_scalajs_createjs_LoadQueue().getResult("resources");
-    this.bitmap$0$1 = (32 | this.bitmap$0$1)
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onKeyUp$lzycompute__p1__F1 = (function() {
+  if (((16384 & this.bitmap$0$1) === 0)) {
+    this.onKeyUp$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(e$2) {
+      return $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().keys$1.remove__O__s_Option($uI(e$2.keyCode))
+    }));
+    this.bitmap$0$1 = (16384 | this.bitmap$0$1)
   };
-  return this.sprites$1
+  return this.onKeyUp$1
 });
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.resources$lzycompute__p1__Lcom_scalawarrior_scalajs_createjs_LoadQueue = (function() {
-  if (((64 & this.bitmap$0$1) === 0)) {
-    this.resources$1 = new $g.createjs.LoadQueue(true);
-    this.bitmap$0$1 = (64 | this.bitmap$0$1)
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onTouchMove__F1 = (function() {
+  return (((4096 & this.bitmap$0$1) === 0) ? this.onTouchMove$lzycompute__p1__F1() : this.onTouchMove$1)
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onMouseUp$lzycompute__p1__F1 = (function() {
+  if (((512 & this.bitmap$0$1) === 0)) {
+    this.onMouseUp$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(e$2) {
+      $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().shoot$1 = false
+    }));
+    this.bitmap$0$1 = (512 | this.bitmap$0$1)
   };
-  return this.resources$1
+  return this.onMouseUp$1
 });
 $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.width$lzycompute__p1__I = (function() {
-  if (((2 & this.bitmap$0$1) === 0)) {
-    this.width$1 = $uI(this.stage__Lcom_scalawarrior_scalajs_createjs_Stage().canvas.width);
-    this.bitmap$0$1 = (2 | this.bitmap$0$1)
+  if (((1 & this.bitmap$0$1) === 0)) {
+    this.width$1 = $uI($m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().innerWidth);
+    this.bitmap$0$1 = (1 | this.bitmap$0$1)
   };
   return this.width$1
 });
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.sprites__Lcom_scalawarrior_scalajs_createjs_SpriteSheet = (function() {
-  return (((32 & this.bitmap$0$1) === 0) ? this.sprites$lzycompute__p1__Lcom_scalawarrior_scalajs_createjs_SpriteSheet() : this.sprites$1)
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onKeyUp__F1 = (function() {
+  return (((16384 & this.bitmap$0$1) === 0) ? this.onKeyUp$lzycompute__p1__F1() : this.onKeyUp$1)
 });
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.stage$lzycompute__p1__Lcom_scalawarrior_scalajs_createjs_Stage = (function() {
-  if (((1 & this.bitmap$0$1) === 0)) {
-    this.stage$1 = new $g.createjs.Stage(this.createCanvas__Lorg_scalajs_dom_raw_HTMLCanvasElement());
-    this.bitmap$0$1 = (1 | this.bitmap$0$1)
-  };
-  return this.stage$1
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onMouseUp__F1 = (function() {
+  return (((512 & this.bitmap$0$1) === 0) ? this.onMouseUp$lzycompute__p1__F1() : this.onMouseUp$1)
 });
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.systems__Lcom_darkoverlordofdata_entitas_Systems = (function() {
-  return (((16 & this.bitmap$0$1) === 0) ? this.systems$lzycompute__p1__Lcom_darkoverlordofdata_entitas_Systems() : this.systems$1)
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onTouchStart__F1 = (function() {
+  return (((8192 & this.bitmap$0$1) === 0) ? this.onTouchStart$lzycompute__p1__F1() : this.onTouchStart$1)
 });
 $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.$$js$exported$meth$main__O = (function() {
   this.main__V()
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.systems__Lcom_darkoverlordofdata_entitas_Systems = (function() {
+  return (((32 & this.bitmap$0$1) === 0) ? this.systems$lzycompute__p1__Lcom_darkoverlordofdata_entitas_Systems() : this.systems$1)
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.stage__Lco_technius_scalajs_pixi_Container = (function() {
+  return (((8 & this.bitmap$0$1) === 0) ? this.stage$lzycompute__p1__Lco_technius_scalajs_pixi_Container() : this.stage$1)
+});
+$c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.onMouseDown__F1 = (function() {
+  return (((1024 & this.bitmap$0$1) === 0) ? this.onMouseDown$lzycompute__p1__F1() : this.onMouseDown$1)
 });
 $c_Lcom_darkoverlordofdata_invaderz_Invaderz$.prototype.main = (function() {
   return this.$$js$exported$meth$main__O()
@@ -6576,6 +6648,20 @@ function $h_sr_AbstractFunction1() {
 $h_sr_AbstractFunction1.prototype = $c_sr_AbstractFunction1.prototype;
 $c_sr_AbstractFunction1.prototype.toString__T = (function() {
   return "<function1>"
+});
+/** @constructor */
+function $c_sr_AbstractFunction2() {
+  $c_O.call(this)
+}
+$c_sr_AbstractFunction2.prototype = new $h_O();
+$c_sr_AbstractFunction2.prototype.constructor = $c_sr_AbstractFunction2;
+/** @constructor */
+function $h_sr_AbstractFunction2() {
+  /*<skip>*/
+}
+$h_sr_AbstractFunction2.prototype = $c_sr_AbstractFunction2.prototype;
+$c_sr_AbstractFunction2.prototype.toString__T = (function() {
+  return "<function2>"
 });
 /** @constructor */
 function $c_sr_BooleanRef() {
@@ -6981,7 +7067,7 @@ $c_Lcom_darkoverlordofdata_invaderz_systems_DestroySystem.prototype.execute__V =
   while ((!these.isEmpty__Z())) {
     var arg1 = these.head__O();
     var entity = $as_Lcom_darkoverlordofdata_entitas_Entity(arg1);
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().stage__Lcom_scalawarrior_scalajs_createjs_Stage().removeChild(($m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$(), new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity)).view__Lcom_darkoverlordofdata_invaderz_ViewComponent().sprite$1);
+    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().stage__Lco_technius_scalajs_pixi_Container().removeChild(($m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$(), new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity)).view__Lcom_darkoverlordofdata_invaderz_ViewComponent().sprite$1);
     this.com$darkoverlordofdata$invaderz$systems$DestroySystem$$pool$f.destroyEntity__Lcom_darkoverlordofdata_entitas_Entity__O(entity);
     these = $as_sci_List(these.tail__O())
   }
@@ -7044,6 +7130,9 @@ $c_Lcom_darkoverlordofdata_invaderz_systems_InputSystem.prototype.execute__V = (
       var p3 = $uZ(arg1$1.$$und2$f);
       if ((p2 === 37)) {
         if (p3) {
+          var this$5 = $m_s_Console$();
+          var this$6 = $as_Ljava_io_PrintStream(this$5.outVar$2.v$1);
+          this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V("key left\n");
           elem$1 = true;
           $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$();
           var entity$1 = this.player__Lcom_darkoverlordofdata_entitas_Entity();
@@ -7055,6 +7144,9 @@ $c_Lcom_darkoverlordofdata_invaderz_systems_InputSystem.prototype.execute__V = (
       var p5 = $uZ(arg1$1.$$und2$f);
       if ((p4 === 39)) {
         if (p5) {
+          var this$9 = $m_s_Console$();
+          var this$10 = $as_Ljava_io_PrintStream(this$9.outVar$2.v$1);
+          this$10.java$lang$JSConsoleBasedPrintStream$$printString__T__V("key right\n");
           elem$1 = true;
           $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$();
           var entity$2 = this.player__Lcom_darkoverlordofdata_entitas_Entity();
@@ -7066,6 +7158,9 @@ $c_Lcom_darkoverlordofdata_invaderz_systems_InputSystem.prototype.execute__V = (
       var p7 = $uZ(arg1$1.$$und2$f);
       if ((p6 === 38)) {
         if (p7) {
+          var this$13 = $m_s_Console$();
+          var this$14 = $as_Ljava_io_PrintStream(this$13.outVar$2.v$1);
+          this$14.java$lang$JSConsoleBasedPrintStream$$printString__T__V("key fire\n");
           this.timeToFire$1 = $fround((this.timeToFire$1 - $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().delta$1));
           if ((this.timeToFire$1 < 0.0)) {
             this.timeToFire$1 = this.FireRate$1;
@@ -7081,9 +7176,9 @@ $c_Lcom_darkoverlordofdata_invaderz_systems_InputSystem.prototype.execute__V = (
         }
       };
       var x = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["", ""])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([arg1$1]));
-      var this$9 = $m_s_Console$();
-      var this$10 = $as_Ljava_io_PrintStream(this$9.outVar$2.v$1);
-      this$10.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
+      var this$18 = $m_s_Console$();
+      var this$19 = $as_Ljava_io_PrintStream(this$18.outVar$2.v$1);
+      this$19.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
       break matchEnd15
     };
     es = $as_scm_HashEntry(es.next$1);
@@ -8118,49 +8213,6 @@ var $d_sci_Stream$StreamCanBuildFrom = new $TypeData().initClass({
 });
 $c_sci_Stream$StreamCanBuildFrom.prototype.$classData = $d_sci_Stream$StreamCanBuildFrom;
 /** @constructor */
-function $c_sci_Stream$StreamWithFilter() {
-  $c_sc_TraversableLike$WithFilter.call(this);
-  this.p$2 = null
-}
-$c_sci_Stream$StreamWithFilter.prototype = new $h_sc_TraversableLike$WithFilter();
-$c_sci_Stream$StreamWithFilter.prototype.constructor = $c_sci_Stream$StreamWithFilter;
-/** @constructor */
-function $h_sci_Stream$StreamWithFilter() {
-  /*<skip>*/
-}
-$h_sci_Stream$StreamWithFilter.prototype = $c_sci_Stream$StreamWithFilter.prototype;
-$c_sci_Stream$StreamWithFilter.prototype.foreach__F1__V = (function(f) {
-  var this$1 = $as_sci_Stream(this.$$outer$f);
-  var _$this = this$1;
-  x: {
-    _foreach: while (true) {
-      if ((!_$this.isEmpty__Z())) {
-        var arg1 = _$this.head__O();
-        if ($uZ(this.p$2.apply__O__O(arg1))) {
-          f.apply__O__O(arg1)
-        };
-        _$this = $as_sci_Stream(_$this.tail__O());
-        continue _foreach
-      };
-      break x
-    }
-  }
-});
-$c_sci_Stream$StreamWithFilter.prototype.init___sci_Stream__F1 = (function($$outer, p) {
-  this.p$2 = p;
-  $c_sc_TraversableLike$WithFilter.prototype.init___sc_TraversableLike__F1.call(this, $$outer, p);
-  return this
-});
-var $d_sci_Stream$StreamWithFilter = new $TypeData().initClass({
-  sci_Stream$StreamWithFilter: 0
-}, false, "scala.collection.immutable.Stream$StreamWithFilter", {
-  sci_Stream$StreamWithFilter: 1,
-  sc_TraversableLike$WithFilter: 1,
-  O: 1,
-  scg_FilterMonadic: 1
-});
-$c_sci_Stream$StreamWithFilter.prototype.$classData = $d_sci_Stream$StreamWithFilter;
-/** @constructor */
 function $c_scm_StringBuilder$() {
   $c_O.call(this)
 }
@@ -8246,6 +8298,34 @@ var $d_sjsr_AnonFunction1 = new $TypeData().initClass({
   F1: 1
 });
 $c_sjsr_AnonFunction1.prototype.$classData = $d_sjsr_AnonFunction1;
+/** @constructor */
+function $c_sjsr_AnonFunction2() {
+  $c_sr_AbstractFunction2.call(this);
+  this.f$2 = null
+}
+$c_sjsr_AnonFunction2.prototype = new $h_sr_AbstractFunction2();
+$c_sjsr_AnonFunction2.prototype.constructor = $c_sjsr_AnonFunction2;
+/** @constructor */
+function $h_sjsr_AnonFunction2() {
+  /*<skip>*/
+}
+$h_sjsr_AnonFunction2.prototype = $c_sjsr_AnonFunction2.prototype;
+$c_sjsr_AnonFunction2.prototype.init___sjs_js_Function2 = (function(f) {
+  this.f$2 = f;
+  return this
+});
+$c_sjsr_AnonFunction2.prototype.apply__O__O__O = (function(arg1, arg2) {
+  return (0, this.f$2)(arg1, arg2)
+});
+var $d_sjsr_AnonFunction2 = new $TypeData().initClass({
+  sjsr_AnonFunction2: 0
+}, false, "scala.scalajs.runtime.AnonFunction2", {
+  sjsr_AnonFunction2: 1,
+  sr_AbstractFunction2: 1,
+  O: 1,
+  F2: 1
+});
+$c_sjsr_AnonFunction2.prototype.$classData = $d_sjsr_AnonFunction2;
 /** @constructor */
 function $c_sjsr_RuntimeLong$() {
   $c_O.call(this);
@@ -8769,13 +8849,13 @@ function $h_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem() {
 }
 $h_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem.prototype = $c_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem.prototype;
 $c_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem.prototype.initialize__V = (function() {
-  this.background__Lcom_scalawarrior_scalajs_createjs_Sprite().scaleX = ($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().width__I() / $uD(this.background__Lcom_scalawarrior_scalajs_createjs_Sprite().getBounds().width));
-  this.background__Lcom_scalawarrior_scalajs_createjs_Sprite().scaleY = ($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().height__I() / $uD(this.background__Lcom_scalawarrior_scalajs_createjs_Sprite().getBounds().height));
-  $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().stage__Lcom_scalawarrior_scalajs_createjs_Stage().addChild(this.background__Lcom_scalawarrior_scalajs_createjs_Sprite())
+  this.background__Lco_technius_scalajs_pixi_Sprite().scale.x = ($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().width__I() / $uD(this.background__Lco_technius_scalajs_pixi_Sprite().width));
+  this.background__Lco_technius_scalajs_pixi_Sprite().scale.y = ($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().height__I() / $uD(this.background__Lco_technius_scalajs_pixi_Sprite().height));
+  $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().stage__Lco_technius_scalajs_pixi_Container().addChild(this.background__Lco_technius_scalajs_pixi_Sprite())
 });
-$c_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem.prototype.background$lzycompute__p1__Lcom_scalawarrior_scalajs_createjs_Sprite = (function() {
+$c_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem.prototype.background$lzycompute__p1__Lco_technius_scalajs_pixi_Sprite = (function() {
   if (((2 & this.bitmap$0$1) === 0)) {
-    this.background$1 = new $g.createjs.Sprite($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().sprites__Lcom_scalawarrior_scalajs_createjs_SpriteSheet(), "black");
+    this.background$1 = new $g.PIXI.Sprite($g.PIXI.Texture.fromImage("images/black.png"));
     this.bitmap$0$1 = (2 | this.bitmap$0$1)
   };
   return this.background$1
@@ -8792,17 +8872,17 @@ $c_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem.prototype.views__Lcom_d
   return (((1 & this.bitmap$0$1) === 0) ? this.views$lzycompute__p1__Lcom_darkoverlordofdata_entitas_Group() : this.views$1)
 });
 $c_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem.prototype.execute__V = (function() {
-  $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().stage__Lcom_scalawarrior_scalajs_createjs_Stage().update()
+  $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().renderer__Lco_technius_scalajs_pixi_SystemRenderer().render($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().stage__Lco_technius_scalajs_pixi_Container())
 });
-$c_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem.prototype.background__Lcom_scalawarrior_scalajs_createjs_Sprite = (function() {
-  return (((2 & this.bitmap$0$1) === 0) ? this.background$lzycompute__p1__Lcom_scalawarrior_scalajs_createjs_Sprite() : this.background$1)
+$c_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem.prototype.background__Lco_technius_scalajs_pixi_Sprite = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.background$lzycompute__p1__Lco_technius_scalajs_pixi_Sprite() : this.background$1)
 });
 $c_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem.prototype.init___Lcom_darkoverlordofdata_entitas_Pool = (function(pool) {
   this.pool$1 = pool;
   var this$2 = this.views__Lcom_darkoverlordofdata_entitas_Group().onEntityAdded$1;
   var invoker = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(e$2) {
     var e = $as_Lcom_darkoverlordofdata_entitas_GroupChangedArgs(e$2);
-    var jsx$1 = $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().stage__Lcom_scalawarrior_scalajs_createjs_Stage();
+    var jsx$1 = $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().stage__Lco_technius_scalajs_pixi_Container();
     $m_Lcom_darkoverlordofdata_invaderz_EntityExtensions$();
     var entity = e.entity$1;
     jsx$1.addChild(new $c_Lcom_darkoverlordofdata_invaderz_EntityExtensions$ExtendEntity().init___Lcom_darkoverlordofdata_entitas_Entity(entity).view__Lcom_darkoverlordofdata_invaderz_ViewComponent().sprite$1)
@@ -10297,84 +10377,6 @@ var $d_Lcom_darkoverlordofdata_entitas_Pool$$anonfun$3 = new $TypeData().initCla
   Ljava_io_Serializable: 1
 });
 $c_Lcom_darkoverlordofdata_entitas_Pool$$anonfun$3.prototype.$classData = $d_Lcom_darkoverlordofdata_entitas_Pool$$anonfun$3;
-/** @constructor */
-function $c_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1() {
-  $c_sr_AbstractFunction1.call(this)
-}
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1.prototype = new $h_sr_AbstractFunction1();
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1.prototype.constructor = $c_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1;
-/** @constructor */
-function $h_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1() {
-  /*<skip>*/
-}
-$h_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1.prototype = $c_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1.prototype;
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1.prototype.init___ = (function() {
-  return this
-});
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1.prototype.apply__O__O = (function(v1) {
-  return this.apply__O__Z(v1)
-});
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1.prototype.apply__O__Z = (function(e) {
-  $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().systems__Lcom_darkoverlordofdata_entitas_Systems().add__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_Systems($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool().createSystem__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_ISystem(new $c_Lcom_darkoverlordofdata_invaderz_systems_RenderSystem().init___Lcom_darkoverlordofdata_entitas_Pool($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool()))).add__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_Systems($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool().createSystem__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_ISystem(new $c_Lcom_darkoverlordofdata_invaderz_systems_PhysicsSystem().init___Lcom_darkoverlordofdata_entitas_Pool($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool()))).add__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_Systems($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool().createSystem__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_ISystem(new $c_Lcom_darkoverlordofdata_invaderz_systems_InputSystem().init___Lcom_darkoverlordofdata_entitas_Pool($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool()))).add__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_Systems($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool().createSystem__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_ISystem(new $c_Lcom_darkoverlordofdata_invaderz_systems_CreateAliensSystem().init___Lcom_darkoverlordofdata_entitas_Pool($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool()))).add__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_Systems($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool().createSystem__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_ISystem(new $c_Lcom_darkoverlordofdata_invaderz_systems_CollisionSystem().init___Lcom_darkoverlordofdata_entitas_Pool($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool()))).add__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_Systems($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool().createSystem__Lcom_darkoverlordofdata_entitas_ISystem__Lcom_darkoverlordofdata_entitas_ISystem(new $c_Lcom_darkoverlordofdata_invaderz_systems_DestroySystem().init___Lcom_darkoverlordofdata_entitas_Pool($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().pool__Lcom_darkoverlordofdata_entitas_Pool())));
-  $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().systems__Lcom_darkoverlordofdata_entitas_Systems().initialize__V();
-  var this$2 = $m_s_Console$();
-  var this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
-  this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("INITIALIZED\n");
-  $g.addEventListener("keydown", (function(e$2) {
-    return $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().keys$1.put__O__O__s_Option($uI(e$2.keyCode), true)
-  }), false);
-  $g.addEventListener("keyup", (function(e$2$1) {
-    return $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().keys$1.remove__O__s_Option($uI(e$2$1.keyCode))
-  }), false);
-  $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().stage__Lcom_scalawarrior_scalajs_createjs_Stage().canvas.addEventListener("mousedown", (function(e$2$2) {
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().shoot$1 = true
-  }), true);
-  $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().stage__Lcom_scalawarrior_scalajs_createjs_Stage().canvas.addEventListener("mouseup", (function(e$2$3) {
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().shoot$1 = false
-  }), true);
-  $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().stage__Lcom_scalawarrior_scalajs_createjs_Stage().canvas.addEventListener("mousemove", (function(e$2$4) {
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().mouseX$1 = $fround($uD(e$2$4.clientX));
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().mouseY$1 = $fround(($fround($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().height__I()) - $fround($uD(e$2$4.clientY))))
-  }), true);
-  $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().addEventListener("touchstart", (function(e$2$5) {
-    var this$13 = $m_s_Console$();
-    var this$14 = $as_Ljava_io_PrintStream(this$13.outVar$2.v$1);
-    this$14.java$lang$JSConsoleBasedPrintStream$$printString__T__V("touchstart\n");
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().shoot$1 = true;
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().mouseX$1 = $fround($uD(e$2$5.touches.item(0).clientX));
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().mouseY$1 = $fround(($fround($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().height__I()) - $fround($uD(e$2$5.touches.item(0).clientY))))
-  }), true);
-  $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().addEventListener("touchend", (function(e$2$6) {
-    var this$16 = $m_s_Console$();
-    var this$17 = $as_Ljava_io_PrintStream(this$16.outVar$2.v$1);
-    this$17.java$lang$JSConsoleBasedPrintStream$$printString__T__V("touchend\n");
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().shoot$1 = false
-  }), true);
-  $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().addEventListener("touchmove", (function(e$2$7) {
-    var this$19 = $m_s_Console$();
-    var this$20 = $as_Ljava_io_PrintStream(this$19.outVar$2.v$1);
-    this$20.java$lang$JSConsoleBasedPrintStream$$printString__T__V("touchmove\n");
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().mouseX$1 = $fround($uD(e$2$7.touches.item(0).clientX));
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().mouseY$1 = $fround(($fround($m_Lcom_darkoverlordofdata_invaderz_Invaderz$().height__I()) - $fround($uD(e$2$7.touches.item(0).clientY))))
-  }), true);
-  $g.createjs.Ticker.setFPS(30.0);
-  $g.createjs.Ticker.addEventListener("tick", (function(e$2$8) {
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().delta$1 = $fround(($fround($uD(e$2$8.delta)) / 1000.0));
-    $m_Lcom_darkoverlordofdata_invaderz_Invaderz$().systems__Lcom_darkoverlordofdata_entitas_Systems().execute__V()
-  }));
-  return true
-});
-var $d_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1 = new $TypeData().initClass({
-  Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1: 0
-}, false, "com.darkoverlordofdata.invaderz.Invaderz$$anonfun$main$1", {
-  Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1: 1,
-  sr_AbstractFunction1: 1,
-  O: 1,
-  F1: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1.prototype.$classData = $d_Lcom_darkoverlordofdata_invaderz_Invaderz$$anonfun$main$1;
 /** @constructor */
 function $c_jl_ArithmeticException() {
   $c_jl_RuntimeException.call(this)
@@ -12817,7 +12819,7 @@ $c_Lcom_darkoverlordofdata_invaderz_ViewComponent.prototype.productElement__I__O
 $c_Lcom_darkoverlordofdata_invaderz_ViewComponent.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
-$c_Lcom_darkoverlordofdata_invaderz_ViewComponent.prototype.init___Lcom_scalawarrior_scalajs_createjs_Sprite = (function(sprite) {
+$c_Lcom_darkoverlordofdata_invaderz_ViewComponent.prototype.init___Lco_technius_scalajs_pixi_Sprite = (function(sprite) {
   this.sprite$1 = sprite;
   return this
 });
@@ -15269,9 +15271,6 @@ $h_sc_AbstractTraversable.prototype = $c_sc_AbstractTraversable.prototype;
 $c_sc_AbstractTraversable.prototype.mkString__T__T__T__T = (function(start, sep, end) {
   return $s_sc_TraversableOnce$class__mkString__sc_TraversableOnce__T__T__T__T(this, start, sep, end)
 });
-$c_sc_AbstractTraversable.prototype.withFilter__F1__scg_FilterMonadic = (function(p) {
-  return new $c_sc_TraversableLike$WithFilter().init___sc_TraversableLike__F1(this, p)
-});
 $c_sc_AbstractTraversable.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $s_sc_TraversableOnce$class__addString__sc_TraversableOnce__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end)
 });
@@ -17706,9 +17705,6 @@ $c_sci_Stream.prototype.drop__I__sc_LinearSeqOptimized = (function(n) {
 $c_sci_Stream.prototype.mkString__T__T__T__T = (function(start, sep, end) {
   this.force__sci_Stream();
   return $s_sc_TraversableOnce$class__mkString__sc_TraversableOnce__T__T__T__T(this, start, sep, end)
-});
-$c_sci_Stream.prototype.withFilter__F1__scg_FilterMonadic = (function(p) {
-  return new $c_sci_Stream$StreamWithFilter().init___sci_Stream__F1(this, p)
 });
 $c_sci_Stream.prototype.companion__scg_GenericCompanion = (function() {
   return $m_sci_Stream$()
