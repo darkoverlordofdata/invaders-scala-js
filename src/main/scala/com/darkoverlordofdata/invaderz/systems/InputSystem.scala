@@ -1,8 +1,7 @@
 package com.darkoverlordofdata.invaderz.systems
 
 import com.darkoverlordofdata.entitas._
-import com.darkoverlordofdata.invaderz.{Component, Invaderz, Match}
-import com.scalawarrior.scalajs.createjs.{SpriteSheet, Sprite, Bitmap}
+import com.darkoverlordofdata.invaderz.Invaderz
 import com.darkoverlordofdata.invaderz.EntityExtensions._
 import com.darkoverlordofdata.invaderz.PoolExtensions._
 
@@ -21,16 +20,19 @@ class InputSystem(pool:Pool)
       key match {
         case (37,true) => {
           // left
+          println("key left")
           keypress = true
           player.velocity.x = -200
         }
         case (39, true) => {
           // right
+          println("key right")
           keypress = true
           player.velocity.x = 200
         }
         case (38, true) => {
           // up
+          println("key fire")
           timeToFire -= Invaderz.delta
           if (timeToFire < 0) {
             timeToFire = FireRate

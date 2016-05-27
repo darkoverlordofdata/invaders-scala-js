@@ -26,7 +26,7 @@
       "y:Float"
     ],
     "View": [
-      "sprite:com.scalawarrior.scalajs.createjs.Sprite"
+      "sprite:co.technius.scalajs.pixi.Sprite"
     ]
   },
   "systems": {

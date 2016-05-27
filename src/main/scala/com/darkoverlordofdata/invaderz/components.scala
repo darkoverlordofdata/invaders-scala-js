@@ -7,7 +7,7 @@ package com.darkoverlordofdata.invaderz
 
 import scala.collection.mutable.ListBuffer
 import com.darkoverlordofdata.entitas.{Entity, Matcher, IMatcher, IComponent}
-import com.scalawarrior.scalajs.createjs.Sprite
+import co.technius.scalajs.pixi.Sprite
 /**
  * Components
  */
@@ -32,7 +32,7 @@ case class DestroyComponent(var active:Boolean=true) extends IComponent
 case class PlayerComponent(var active:Boolean=true) extends IComponent 
 case class PositionComponent(var x:Float = 0f,var y:Float = 0f) extends IComponent 
 case class VelocityComponent(var x:Float = 0f,var y:Float = 0f) extends IComponent 
-case class ViewComponent(var sprite:com.scalawarrior.scalajs.createjs.Sprite = null) extends IComponent 
+case class ViewComponent(var sprite:co.technius.scalajs.pixi.Sprite = null) extends IComponent 
 
 /**
  * Matcher extensions
@@ -242,7 +242,7 @@ object EntityExtensions {
             viewComponentPool.clear()
         }
 
-        def addView(sprite:com.scalawarrior.scalajs.createjs.Sprite):Entity = {
+        def addView(sprite:co.technius.scalajs.pixi.Sprite):Entity = {
             val component:ViewComponent = 
                 if (viewComponentPool.nonEmpty) 
                     viewComponentPool.last.copy(sprite = sprite)
@@ -252,7 +252,7 @@ object EntityExtensions {
             entity
         }
 
-        def replaceView(sprite:com.scalawarrior.scalajs.createjs.Sprite):Entity = {
+        def replaceView(sprite:co.technius.scalajs.pixi.Sprite):Entity = {
             val previousComponent = if (hasView) view else null
             val component:ViewComponent = 
                 if (viewComponentPool.nonEmpty) 
